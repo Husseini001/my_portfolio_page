@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibrahim Husseini Chado</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be07962bf4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -47,11 +48,11 @@
                         and GitHub page
                     </p>
                     <div class="tab-title">
-                        <p class = "tab-links active-link">Skills</p>
-                        <p class = "tab-links">Experience</p>
-                        <p class = "tab-links">Education</p>
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>FrontEnd Development</span><br>HTML, CSS and JavaScript (React Framework Vue.js Framework)</li>
                             <li><span>BackEnd Development</span><br>Java, C, Nodejs, SQL and NoSQL(MongoDB)</li>
@@ -63,19 +64,16 @@
                         </li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>July 2019 – December 2019</span><br>Crown Flour Mills, Lagos (SIWES).</li>
-                            <li><span>November 2021 – October 2022 </span><br>Ministry of Works Damaturu (NYSC)</li>
-                            <li><span>February 2022 – October 2022</span><br><ul>
-                                <li>   Industrial Electrical Maintenance and Troubleshooting and Maintenance of Electric Motors</li>
-                                <li>   Programmable Logic Controller (PLC) (Siemens S7).</li>
-                                <li>   Pneumatic/Electro-pneumatic and Hydraulic Control Systems</li>
-                            </ul>
-                        </li>
+                            <li><span>Access Bank Contact Center</span><br>July 2023 – Pressnt</li>
+                            <li><span>Ministry of Works Damaturu (NYSC)</span><br>November 2021 – October 2022</li>
+                            <li><span>Nurusallam Comprehensive School (Part-time)</span><br>February 2022 – October 2022</li>
+                            <li><span> Crown Flour Mills, Lagos (SIWES).</span><br>July 2019 – December 2019</li>
+                          
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>FrontEnd Development</span><br>HTML, CSS and JavaScript (React Framework Vue.js Framework)</li>
                             <li><span>BackEnd Development</span><br>Java, C, Nodejs, SQL and NoSQL(MongoDB)</li>
@@ -92,6 +90,95 @@
             </div>
         </div>
     </div>
+
+    <!--------------services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class = "subtitle">My Services</h1>
+            <div class="service_list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>webdesign</h2>
+                    <p>At our web design studio, we offer a range of comprehensive services to bring your digital vision to life. Our skilled team specializes in crafting captivating and responsive websites tailored to your unique brand. From sleek and user-friendly interfaces to intuitive navigation, we ensure a seamless user experience. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>BackEnd</h2>
+                    <p>At our web design studio, we offer a range of comprehensive services to bring your digital vision to life. Our skilled team specializes in crafting captivating and responsive websites tailored to your unique brand. From sleek and user-friendly interfaces to intuitive navigation, we ensure a seamless user experience. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                    <h2>Electro-Mechanical</h2>
+                    <p>At our web design studio, we offer a range of comprehensive services to bring your digital vision to life. Our skilled team specializes in crafting captivating and responsive websites tailored to your unique brand. From sleek and user-friendly interfaces to intuitive navigation, we ensure a seamless user experience. </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------portfolio------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class = "subtitle">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="" alt="images1">
+                    <div class="layer">
+                        <h3>Novamessis</h3>
+                        <p><h6>Novamessis is a project aimed at addressing the limited access to fresh and locally sourced food, primarily in urban areas, using Nigeria as a case study.</h6></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="" alt="images2">
+                    <div class="layer">
+                        <h3>E-commerce</h3>
+                        <p><h6> E-commerce project continues from the Novamessis (farm_to_table) project, addressing limited access to fresh/local food in urban areas. It expands to include various products and connects consumers with producers, enabling direct purchases.</h6></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/HeatExchanger.jpg" alt="images3">
+                    <div class="layer">
+                        <h3>Concentric-tube Heat Exchanger</h3>
+                        <p><h6>This project is on the design of fabrication of a concentric of heat exchanger for experimental purposes having a flow path configuration of parallel flow and counter flow using water as the working fluid with a single pass arrangement</h6></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+    
+            var tabToShow = document.getElementById(tabname);
+            tabToShow.classList.add("active-tab");
+    
+            // Find the link corresponding to the tab and add the active-link class
+            for (var i = 0; i < tablinks.length; i++) {
+                if (tablinks[i].getAttribute("onclick") == "opentab('" + tabname + "')") {
+                    tablinks[i].classList.add("active-link");
+                }
+            }
+        }
+    </script>
     
 </body>
 </html>

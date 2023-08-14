@@ -3,7 +3,9 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
-
+}
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,14 +15,24 @@ body{
 
 }
 
-#header{
+
+.display-picture{
+    width: 100%;
+}
+.image-container{
+    width: 200px;
+    height: auto;
+    /* background-color: #ff004f; */
+}
+
+/* #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/NyscBg.jpg);
+    background-image: url(images/my_picture4.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: left;
 
-}
+} */
 
 .container{
     padding: 20px 10%;
@@ -68,7 +80,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    /* margin-top: 20%; */
     font-size: 30px;
 }
 
@@ -338,8 +350,42 @@ form .btn2{
 
 
 /* --------------------for small screen--------------------- */
-@media only screen and (max-width: 600px){
-   #header{
-    background-image: url(images/resized-image-Promo.jpeg);
-   } 
+nav .fa{
+    display: none;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+     background-image: url('resized-image-Promo.jpeg');
+    } 
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+ }
+
+
+
+ /* --------------------You-tube-videos---------------- */
+ .video-container {
+    width: 50%; 
+    padding-top: 50px;
+    /* padding-right: 0px; */
+    /* background-color: red; */
+    
+}
+.image-video-container{
+    display: flex;
+    /* background-color: aliceblue; */
+    justify-content: space-between;
+    
+}
+iframe{
+    /* background-color: rgb(255, 170, 0); */
+    
+    /* display: none; */
 }

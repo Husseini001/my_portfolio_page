@@ -448,6 +448,18 @@ form .btn2{
     }
 }
 
+#achievement .about-col-1 iframe {
+    width: 100%; /* Make the video container take the full width of the parent element */
+    height: 400px; /* Set a specific height for the video, adjust as needed */
+  }
+
+#portfolio .work-list .work img {
+    width: 100%; /* Make the images take the full width of the screen */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+
+
+
 
 
  /* --------------------You-tube-videos---------------- */

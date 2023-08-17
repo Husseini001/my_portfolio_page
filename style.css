@@ -350,23 +350,94 @@ form .btn2{
 
 
 /* --------------------for small screen--------------------- */
-nav .fa{
-    display: none;
-    font-size: 16px;
-}
-
 @media only screen and (max-width: 600px) {
+    /* Header */
     #header {
-     background-image: url('resized-image-Promo.jpeg');
-    } 
-    .header-text{
+        background-image: url('resized-image-Promo.jpeg');
+    }
+    .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
-    .header-text h1{
+    .header-text h1 {
         font-size: 30px;
     }
- }
+
+    /* Navigation */
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #262626;
+        text-align: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    nav .fa-bars {
+        display: block;
+    }
+    nav .fa-times {
+        display: none;
+    }
+    nav .fa {
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    /* Services and Portfolio */
+    .service_list div {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .work img {
+        max-width: 100%;
+        height: auto;
+    }
+    .work .layer h3 {
+        font-size: 18px;
+    }
+    .work .layer p {
+        font-size: 10px;
+    }
+    .work .layer a {
+        font-size: 10px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+    .btn.btn2 {
+        font-size: 14px;
+    }
+
+    /* Contact */
+    .contact-left {
+        flex-basis: 100%;
+    }
+    .contact-right {
+        flex-basis: 100%;
+    }
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
+    form .btn2 {
+        font-size: 16px;
+    }
+}
 
 
 

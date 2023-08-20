@@ -19,11 +19,18 @@ body{
 .display-picture{
     width: 100%;
 }
+.image-video-container{
+    /* background-color: aqua; */
+    /* display: flex; */
+}
+
 .image-container{
     width: 200px;
     height: auto;
+    background-color:tomato;
     /* background-color: #ff004f; */
 }
+
 
 /* #header{
     width: 100%;
@@ -103,10 +110,18 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* background-color: gold; */
+}
+.about-col-7{
+    /* background-color: tomato; */
+    height: 400px;
+    width: 100%;
+
 }
 
 .about-col-1{
     flex-basis: 35%;
+    /* background-color: purple; */
 }
 
 .about-col-1 img{
@@ -365,12 +380,39 @@ form .btn2{
         background-image: url('resized-image-Promo.jpeg');
     }
     .header-text {
-        margin-top: 100%;
+        /* margin-top: 100%; */
         font-size: 16px;
+        /* background-color: gold; */
     }
     .header-text h1 {
         font-size: 30px;
     }
+    .image-video-container{
+        /* background-color: aqua; */
+        display: flex;
+        width: 100%;
+        /* height: 200px; */
+        /* padding: 10px 10px 10px 10px; */
+    }
+
+    .image-container{
+        /* text-align: center; */
+        /* justify-content: center; */
+        width: 50%;
+        margin: 0 auto;
+
+    }
+    .row{
+        width: 100%;
+    }
+
+    .about-col-1{
+        height: 300px;
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    
 
     /* Navigation */
     nav ul {
@@ -458,6 +500,10 @@ form .btn2{
     height: auto; /* Allow the height to adjust proportionally */
   }
 
+  .about-video{
+    
+  }
+
 
 
 
@@ -476,8 +522,4 @@ form .btn2{
     justify-content: space-between;
     
 }
-iframe{
-    /* background-color: rgb(255, 170, 0); */
-    
-    /* display: none; */
-}
+

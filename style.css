@@ -27,7 +27,7 @@ body{
 .image-container{
     width: 200px;
     height: auto;
-    background-color:tomato;
+    /* background-color:tomato; */
     /* background-color: #ff004f; */
 }
 
